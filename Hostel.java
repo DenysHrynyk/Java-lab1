@@ -10,7 +10,6 @@ public class Hostel {
     protected String priceForNumbers;
     public static int work_day = 16;
 
-
     Hostel(){
     }
 
@@ -30,8 +29,6 @@ public class Hostel {
         this.priceForNumbers = priceForNumbers;
     }
 
-
-
     public String toString(){
         String information = "Number visitors in hotel for a year " + custemersForYear +
                 "\n" + "The name Hotels " + nameHostel +
@@ -43,7 +40,8 @@ public class Hostel {
                 return information;
     }
     public void getcustemersForYear(int custemersForYear) {
-      this.custemersForYear = custemersForYear;
+        
+        this.custemersForYear = custemersForYear;
     }
 
     public int setcustomers(){
@@ -57,22 +55,24 @@ public class Hostel {
     }
 
     public static void printStaticwork_day(){
+        
         System.out.println(work_day);
     }
 
     public void printwork_day() {
+        
         System.out.println(work_day);
     }
 
     public void resetValues(int custemersForYear, String nameHostel, int numbersInHostel, String locationOfHostel, int qualityHostel,
-                            int  staffInHostel, String priceForNumbers) {
+                            int staffInHostel, String priceForNumbers) {
         this.custemersForYear = custemersForYear;
         this.qualityHostel = qualityHostel;
         this.nameHostel = nameHostel;
         this.numbersInHostel = numbersInHostel;
         this.locationOfHostel = locationOfHostel;
         this.staffInHostel = staffInHostel;
-        this.priceForNumbers =priceForNumbers;
+        this.priceForNumbers = priceForNumbers;
     }
 }
 
