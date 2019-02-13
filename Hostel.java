@@ -1,33 +1,39 @@
 package com.company;
 
 public class Hostel {
-    public int custemersForYear;
-    public String nameHostel;
-    public int numbersInHostel;
+    private int custemersForYear;
+    private String nameHostel;
+    private int numbersInHostel;
     private String locationOfHostel;
     private int qualityHostel;
     protected int staffInHostel;
     protected String priceForNumbers;
-    public static int work_day = 16;
+    public static int workDay = 16;
 
-    Hostel(){
+
+    public Hostel(){
+        this(0, " null", 0, "null",
+        0,0,"null");
     }
 
-    Hostel(int custemersForYear, String nameHostel, int numbersInHostel, String locationOfHostel ){
+    public Hostel(int custemersForYear, String nameHostel, int numbersInHostel, String locationOfHostel ){
+
+        this(1242, "Lviv",122,"st.Bandera", 0,0,"null");
+    }
+
+    public Hostel(int custemersForYear, String nameHostel, int numbersInHostel,
+           String locationOfHostel, int qualityHostel, int staffInHostel, String priceForNumbers){
 
         this.custemersForYear = custemersForYear;
-        this.locationOfHostel = locationOfHostel;
         this.nameHostel = nameHostel;
         this.numbersInHostel = numbersInHostel;
-    }
-
-    Hostel(int custemers, String nameHostel, int numbersInHostel,
-           String location, int qualityHostel, int staffInHostel, String price){
-        this(custemers, nameHostel, numbersInHostel, location);
+        this.locationOfHostel = locationOfHostel;
         this.qualityHostel = qualityHostel;
         this.staffInHostel = staffInHostel;
         this.priceForNumbers = priceForNumbers;
     }
+
+
 
     public String toString(){
         String information = "Number visitors in hotel for a year " + custemersForYear +
@@ -40,8 +46,7 @@ public class Hostel {
                 return information;
     }
     public void getcustemersForYear(int custemersForYear) {
-        
-        this.custemersForYear = custemersForYear;
+      this.custemersForYear = custemersForYear;
     }
 
     public int setcustomers(){
@@ -54,25 +59,23 @@ public class Hostel {
         this.nameHostel = nameHostel;
     }
 
-    public static void printStaticwork_day(){
-        
-        System.out.println(work_day);
+    public static int printStaticWorkDay(){
+        return workDay;
     }
 
-    public void printwork_day() {
-        
-        System.out.println(work_day);
+    public void printWorkDay() {
+        System.out.println(workDay);
     }
 
     public void resetValues(int custemersForYear, String nameHostel, int numbersInHostel, String locationOfHostel, int qualityHostel,
-                            int staffInHostel, String priceForNumbers) {
+                            int  staffInHostel, String priceForNumbers) {
         this.custemersForYear = custemersForYear;
         this.qualityHostel = qualityHostel;
         this.nameHostel = nameHostel;
         this.numbersInHostel = numbersInHostel;
         this.locationOfHostel = locationOfHostel;
         this.staffInHostel = staffInHostel;
-        this.priceForNumbers = priceForNumbers;
+        this.priceForNumbers =priceForNumbers;
     }
 }
 
