@@ -45,16 +45,16 @@ public class Hostel {
                 "\n" + "How many cost rooms in hotels " + priceForNumbers + "\n";
                 return information;
     }
-    public void getcustemersForYear(int custemersForYear) {
+    public void getCustemersForYear(int custemersForYear) {
       this.custemersForYear = custemersForYear;
     }
 
-    public int setcustomers(){
+    public int setCustomers(){
 
         return custemersForYear;
     }
 
-    public void getname(String name){
+    public void getName(String name){
 
         this.nameHostel = nameHostel;
     }
