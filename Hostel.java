@@ -10,13 +10,12 @@ public class Hostel {
     protected String priceForNumbers;
     public static int workDay = 16;
 
-
     public Hostel(){
         this(0, " null", 0, "null",
         0,0,"null");
     }
 
-    public Hostel(int custemersForYear, String nameHostel, int numbersInHostel, String locationOfHostel ){
+    public Hostel(int custemersForYear, String nameHostel, int numbersInHostel, String locationOfHostel ) {
 
         this(1242, "Lviv",122,"st.Bandera", 0,0,"null");
     }
@@ -78,6 +77,9 @@ public class Hostel {
         this.priceForNumbers =priceForNumbers;
     }
 }
+
+
+
 
 
 
