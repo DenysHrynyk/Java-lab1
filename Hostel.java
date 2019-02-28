@@ -10,18 +10,18 @@ public class Hostel {
     protected String priceForNumbers;
     public static int workDay = 16;
 
-    public Hostel(){
+    public Hostel() {
         this(0, " null", 0, "null",
-        0,0,"null");
+                0, 0, "null");
     }
 
-    public Hostel(int custemersForYear, String nameHostel, int numbersInHostel, String locationOfHostel ) {
+    public Hostel(int custemersForYear, String nameHostel, int numbersInHostel, String locationOfHostel) {
 
-        this(1242, "Lviv",122,"st.Bandera", 0,0,"null");
+        this(1242, "Lviv", 122, "st.Bandera", 0, 0, "null");
     }
 
     public Hostel(int custemersForYear, String nameHostel, int numbersInHostel,
-           String locationOfHostel, int qualityHostel, int staffInHostel, String priceForNumbers){
+                  String locationOfHostel, int qualityHostel, int staffInHostel, String priceForNumbers) {
 
         this.custemersForYear = custemersForYear;
         this.nameHostel = nameHostel;
@@ -31,10 +31,8 @@ public class Hostel {
         this.staffInHostel = staffInHostel;
         this.priceForNumbers = priceForNumbers;
     }
-
-
-
-    public String toString(){
+    
+    public String toString() {
         String information = "Number visitors in hotel for a year " + custemersForYear +
                 "\n" + "The name Hotels " + nameHostel +
                 "\n" + "Number of rooms in the hotel " + numbersInHostel +
@@ -42,44 +40,82 @@ public class Hostel {
                 "\n" + "How many hotels have star " + qualityHostel +
                 "\n" + "Number of staff " + staffInHostel +
                 "\n" + "How many cost rooms in hotels " + priceForNumbers + "\n";
-                return information;
-    }
-    public void getCustemersForYear(int custemersForYear) {
-      this.custemersForYear = custemersForYear;
+        return information;
     }
 
-    public int setCustomers(){
+    public void getCustemersForYear(int custemersForYear) {
+        this.custemersForYear = custemersForYear;
+    }
+
+    public int setCustomers() {
 
         return custemersForYear;
     }
 
-    public void getName(String name){
+    public void getName(String name) {
 
         this.nameHostel = nameHostel;
     }
 
-    public static int printStaticWorkDay(){
-        return workDay;
+    public int getCustemersForYear() {
+        return custemersForYear;
     }
 
-    public void printWorkDay() {
-        System.out.println(workDay);
+    public void setCustemersForYear(int custemersForYear) {
+        this.custemersForYear = custemersForYear;
+    }
+
+    public String getNameHostel() {
+        return nameHostel;
+    }
+
+    public void setNameHostel(String nameHostel) {
+        this.nameHostel = nameHostel;
+    }
+
+    public int getNumbersInHostel() {
+        return numbersInHostel;
+    }
+
+    public void setNumbersInHostel(int numbersInHostel) {
+        this.numbersInHostel = numbersInHostel;
+    }
+
+    public String getLocationOfHostel() {
+        return locationOfHostel;
+    }
+
+    public void setLocationOfHostel(String locationOfHostel) {
+        this.locationOfHostel = locationOfHostel;
+    }
+
+    public int getQualityHostel() {
+        return qualityHostel;
+    }
+
+    public void setQualityHostel(int qualityHostel) {
+        this.qualityHostel = qualityHostel;
     }
 
     public void resetValues(int custemersForYear, String nameHostel, int numbersInHostel, String locationOfHostel, int qualityHostel,
-                            int  staffInHostel, String priceForNumbers) {
+                            int staffInHostel, String priceForNumbers) {
         this.custemersForYear = custemersForYear;
         this.qualityHostel = qualityHostel;
         this.nameHostel = nameHostel;
         this.numbersInHostel = numbersInHostel;
         this.locationOfHostel = locationOfHostel;
         this.staffInHostel = staffInHostel;
-        this.priceForNumbers =priceForNumbers;
+        this.priceForNumbers = priceForNumbers;
+    }
+
+    public static int printStaticWorkDay() {
+        return workDay;
+    }
+
+    public void printWorkDay() {
+        System.out.println(workDay);
     }
 }
-
-
-
 
 
 
